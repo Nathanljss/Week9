@@ -26,15 +26,17 @@ export default async function Home() {
       <h2>Home</h2>
       <form action={handleAddPost}>
         <textarea name="post_content" placeholder="Your Post Here"></textarea>
+        &nbsp; &nbsp; &nbsp; &nbsp;
         <button>Send Post</button>
       </form>
       {posts.map(function (post) {
         return (
           <div key={post.id}>
-            <h3>{post.username ? post.username : "Anonymous"}</h3>
-            <div className="scrollingPosts">
+            <h3 className="username">
+              {post.username ? post.username : "Anonymous"}
+            </h3>
+            <div className="Posts">
               <p>{post.content}</p>
-              <hr></hr>
             </div>
           </div>
         );

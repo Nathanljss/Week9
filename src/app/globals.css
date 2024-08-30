@@ -1,5 +1,30 @@
-p.scrollingPosts {
-  overflow: hidden;
-  height: 400px;
-  max-height: 100px;
+body {
+  background-color: grey;
+  color: white;
+}
+
+.Posts {
+  background-color: black;
+  border: solid white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 100px;
+  text-align: center;
+}
+
+button {
+  border-radius: 20px;
+  padding: 10px;
+}
+
+textarea {
+  width: 500px;
+  height: 100px;
 }
